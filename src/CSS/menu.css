@@ -28,26 +28,64 @@ body {
   transform: translate(-50%, -50%);
 }
 
-button {
-  height: 50px;
-  width: 100px;
-  border-radius: 8px;
-  box-shadow: none;
-
+.container1{
+  margin: 0 auto;
+  /* max-width: 90%; */
+  min-width: 90%;
 }
 
-.button, #question {
+.flex-space-evenly{
+  display: flex;
+  justify-content: space-evenly;
+  /* gap: 16px; */
+}
+
+.flex-answers{
+  display: flex;
+}
+
+.background-blue-white{
   background-color: #475569;
   color: white;
 }
 
+.border{
+  border-radius: 8px;
+}
+
+button {
+  min-height: 50px;
+  min-width: 200px;  
+}
+
 .tgl_button,
-.button:hover {
+button:hover {
   background-color: #8aa7cf;
   color: black;
 }
 
+#category_name{
+  font-variant: small-caps;
+  color: yellow;
+}
+
+.question{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 90%;
+  max-height: 30%;
+}
+
 #question{
-  width: 90%;
-  height: 20%;
+  max-width: 80%;
+}
+
+
+.correct{
+  background-color: green;
+}
+
+.incorrect{
+  background-color: darkred;
 }
